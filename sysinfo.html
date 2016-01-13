@@ -1,0 +1,81 @@
+<!--
+*********************************************************
+   Author    : Adriano Alves (aalves3)
+   Date      : Apr.08.2015
+   Course    : CS211E Spring of 2015
+   File name : sysinfo.html
+   Objective : Layout file for sysinfo.jsp 
+               program to give you some system
+               information 
+**********************************************************   
+-->
+
+<!DOCTYPE html>
+<html lang-"en">
+    <head>
+        <title>CS211E HW5 JSP SYSINFO</title>
+        <style type=text/css>
+        /************ body layout ************/
+        body 
+        {
+           background-image:url(pcsuport.jpg);
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+        }
+        html {height: 100%}
+
+        /************ h1 layout ************/
+        #hd1 
+        {
+           margin-top: 15px; 
+           margin-left: 15px; 
+           color: gray; 
+           font-size: 50px; 
+           font-weight: bolder;
+        }
+        /************ form layout ************/
+        #fm1
+        {
+           margin-top: 5px;
+           margin-left: 45px;
+           color: black;
+           font-size: 40px;
+           font-weight: bolder;
+        }
+        /************ button layout ************/
+        #bt1 
+        {
+           margin-top: 15px; 
+           font-size: 30px;
+           color: blue;
+           background-color: LightGray;
+           font-weight: bolder;
+        }
+        /************ chekbox layout ************/
+        input[type=checkbox] 
+        {
+           /* All browsers except webkit*/
+           transform: scale(2);
+
+           /* Webkit browsers*/
+           -webkit-transform: scale(2);
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <h1 id="hd1">Select Options:</h1>
+            <form id="fm1" method="get" action="sysinfo.jsp">
+                <strong>
+                <input type="checkbox" name="option1" value="1"> 1) Show java version<br>
+                <input type="checkbox" name="option2" value="2"> 2) Show java directory<br>
+                <input type="checkbox" name="option3" value="3"> 3) Show operating system name<br>
+                <input type="checkbox" name="option4" value="4"> 4) Show user name<br>
+                <input type="checkbox" name="option5" value="5"> 5) Show user home<br>
+                <input type="checkbox" name="option6" value="6"> 6) Show curent directory<br>
+                </strong>
+                <input id="bt1" type="submit" value="Show Options">
+            </form>
+    </body>
+</html>    
